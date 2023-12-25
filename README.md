@@ -1,6 +1,7 @@
 Documentation
 
 Project Overview:
+
 The project consists of two folders. project-talk folder containes user interface files developed using react. Server folder containes node js api to connect frontend and mongodb database.
 
 The application is developed using following technologies: 
