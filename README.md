@@ -1,5 +1,7 @@
 Documentation
+
 Project Overview:
+
 The application is developed using following technologies: 
 1. React Js for frontend
 2. Material UI for React components
