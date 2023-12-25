@@ -1,0 +1,23 @@
+version: '2'
+services:
+  project: 
+    build: ./project-talk
+    container_name: react-app
+    image: react-image
+    ports:
+      - '3000:3000'
+    depends_on:
+      - api
+  api:
+    build: ./Server
+    container_name: react-Server
+    image: node-server
+    ports:
+      - '3001:3001'
+    depends_on:
+      - mongo
+  mongo_db:
+    image: mongo:latest
+    restart: always
+    ports:
+      - '27017:27017'
